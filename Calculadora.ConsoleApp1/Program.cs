@@ -69,27 +69,24 @@
                     Console.WriteLine("---------------------------------------------");
                     Console.WriteLine("Historico de operações");
                     Console.WriteLine("---------------------------------------------");
-                }
+                
 
                     for (int contador = 0; contador <= contadorHistorico; contador++)
-                    {
                         Console.WriteLine(historicoOperacoes[contador]);
-                    }
+
+                    Console.ReadLine();
+                    continue;
+                }
 
 
-
+                    Console.WriteLine("---------------------------------------------");
                     Console.Write("Digite o primeiro numero: ");
-
-                    string strPprimeiroNumero = Console.ReadLine();
-
-                    decimal primeiroNumero = Convert.ToDecimal(strPprimeiroNumero);
+                    decimal primeiroNumero = Convert.ToDecimal(Console.ReadLine());
 
 
 
                     Console.Write("Digite o segundo numero: ");
-                    string strSegundoNumero = Console.ReadLine();
-
-                    decimal segundoNumero = Convert.ToDecimal(strSegundoNumero);
+                    decimal segundoNumero = Convert.ToDecimal(Console.ReadLine());
 
                     decimal resultado = 0.0m;
 
